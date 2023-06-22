@@ -1,0 +1,170 @@
+2023-06-22 15:48:15.163 +05:30 [INF] Now listening on: https://localhost:7081
+2023-06-22 15:48:15.223 +05:30 [INF] Now listening on: http://localhost:5031
+2023-06-22 15:48:15.240 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-22 15:48:15.244 +05:30 [INF] Hosting environment: Development
+2023-06-22 15:48:15.246 +05:30 [INF] Content root path: C:\Users\User\source\repos\.NetCore\ADO\Asp.net\BiolerPlate\Session4_BoilerPlate\
+2023-06-22 15:48:16.423 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/index.html - -
+2023-06-22 15:48:17.144 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - -
+2023-06-22 15:48:17.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 15.8289ms
+2023-06-22 15:48:17.184 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_vs/browserLink - -
+2023-06-22 15:48:17.189 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/index.html - - - 200 - text/html;charset=utf-8 782.2757ms
+2023-06-22 15:48:17.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 111.9152ms
+2023-06-22 15:48:17.536 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - -
+2023-06-22 15:48:17.785 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 249.7118ms
+2023-06-22 15:48:35.298 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7081/api/Product application/json 80
+2023-06-22 15:48:35.320 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate)'
+2023-06-22 15:48:35.376 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateProduct(Session4_BoilerPlate.Models.CreateProductDTO) on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 15:48:38.618 +05:30 [INF] Executed DbCommand (113ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ProductDescription], [ProductName], [ProductPrice])
+OUTPUT INSERTED.[ProductId]
+VALUES (@p0, @p1, @p2);
+2023-06-22 15:48:38.769 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Session4_BoilerPlate.AddDbContext.Product'.
+2023-06-22 15:48:38.870 +05:30 [INF] Executed action Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate) in 3466.4131ms
+2023-06-22 15:48:38.871 +05:30 [INF] Executed endpoint 'Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate)'
+2023-06-22 15:48:38.906 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7081/api/Product application/json 80 - 201 - application/json;+charset=utf-8 3608.0385ms
+2023-06-22 16:33:11.060 +05:30 [INF] Creating key {21769dfe-6b43-4869-ab6d-17d157336fc2} with creation date 2023-06-22 11:03:11Z, activation date 2023-06-22 11:03:10Z, and expiration date 2023-07-22 11:03:10Z.
+2023-06-22 16:33:11.155 +05:30 [WRN] No XML encryptor configured. Key {21769dfe-6b43-4869-ab6d-17d157336fc2} may be persisted to storage in unencrypted form.
+2023-06-22 16:33:11.172 +05:30 [INF] Writing data to file 'C:\Users\User\source\repos\.NetCore\ADO\Asp.net\BiolerPlate\Session4_BoilerPlate\path\to\keys\key-21769dfe-6b43-4869-ab6d-17d157336fc2.xml'.
+2023-06-22 16:33:11.497 +05:30 [INF] Now listening on: https://localhost:7081
+2023-06-22 16:33:11.500 +05:30 [INF] Now listening on: http://localhost:5031
+2023-06-22 16:33:11.520 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-22 16:33:11.524 +05:30 [INF] Hosting environment: Development
+2023-06-22 16:33:11.526 +05:30 [INF] Content root path: C:\Users\User\source\repos\.NetCore\ADO\Asp.net\BiolerPlate\Session4_BoilerPlate\
+2023-06-22 16:33:12.636 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/index.html - -
+2023-06-22 16:33:13.378 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - -
+2023-06-22 16:33:13.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 12.2591ms
+2023-06-22 16:33:13.410 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_vs/browserLink - -
+2023-06-22 16:33:13.436 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/index.html - - - 200 - text/html;charset=utf-8 812.7546ms
+2023-06-22 16:33:13.576 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 165.8261ms
+2023-06-22 16:33:13.656 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - -
+2023-06-22 16:33:13.905 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 248.8529ms
+2023-06-22 16:33:33.761 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7081/api/Product application/json 85
+2023-06-22 16:33:33.814 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate)'
+2023-06-22 16:33:33.856 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateProduct(Session4_BoilerPlate.Models.CreateProductDTO) on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 16:33:36.978 +05:30 [INF] Executed DbCommand (125ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ProductDescription], [ProductName], [ProductPrice])
+OUTPUT INSERTED.[ProductId]
+VALUES (@p0, @p1, @p2);
+2023-06-22 16:33:37.102 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Session4_BoilerPlate.AddDbContext.Product'.
+2023-06-22 16:33:37.215 +05:30 [INF] Executed action Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate) in 3345.3703ms
+2023-06-22 16:33:37.215 +05:30 [INF] Executed endpoint 'Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate)'
+2023-06-22 16:33:37.271 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7081/api/Product application/json 85 - 201 - application/json;+charset=utf-8 3510.3516ms
+2023-06-22 16:33:49.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Product - -
+2023-06-22 16:33:49.270 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.GetAllProducts (Session4_BoilerPlate)'
+2023-06-22 16:33:49.273 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllProducts() on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 16:33:49.764 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice]
+FROM [Products] AS [p]
+2023-06-22 16:36:53.936 +05:30 [INF] Now listening on: https://localhost:7081
+2023-06-22 16:36:53.985 +05:30 [INF] Now listening on: http://localhost:5031
+2023-06-22 16:36:53.998 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-22 16:36:54.002 +05:30 [INF] Hosting environment: Development
+2023-06-22 16:36:54.004 +05:30 [INF] Content root path: C:\Users\User\source\repos\.NetCore\ADO\Asp.net\BiolerPlate\Session4_BoilerPlate\
+2023-06-22 16:36:55.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/index.html - -
+2023-06-22 16:36:56.099 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_vs/browserLink - -
+2023-06-22 16:36:56.099 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - -
+2023-06-22 16:36:56.118 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 16.3991ms
+2023-06-22 16:36:56.155 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/index.html - - - 200 - text/html;charset=utf-8 886.3944ms
+2023-06-22 16:36:56.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 128.0614ms
+2023-06-22 16:36:56.325 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - -
+2023-06-22 16:36:56.694 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 368.7401ms
+2023-06-22 16:37:12.365 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Product - -
+2023-06-22 16:37:12.411 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.GetAllProducts (Session4_BoilerPlate)'
+2023-06-22 16:37:12.437 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllProducts() on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 16:37:14.966 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice]
+FROM [Products] AS [p]
+2023-06-22 16:54:22.563 +05:30 [INF] Now listening on: https://localhost:7081
+2023-06-22 16:54:22.616 +05:30 [INF] Now listening on: http://localhost:5031
+2023-06-22 16:54:22.627 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-22 16:54:22.630 +05:30 [INF] Hosting environment: Development
+2023-06-22 16:54:22.632 +05:30 [INF] Content root path: C:\Users\User\source\repos\.NetCore\ADO\Asp.net\BiolerPlate\Session4_BoilerPlate\
+2023-06-22 16:54:23.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/index.html - -
+2023-06-22 16:54:24.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - -
+2023-06-22 16:54:24.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_vs/browserLink - -
+2023-06-22 16:54:24.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/index.html - - - 200 - text/html;charset=utf-8 903.1866ms
+2023-06-22 16:54:24.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 99.9396ms
+2023-06-22 16:54:24.618 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 177.2579ms
+2023-06-22 16:54:24.722 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - -
+2023-06-22 16:54:25.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 302.7641ms
+2023-06-22 16:54:30.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Product - -
+2023-06-22 16:54:30.486 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.GetAllProducts (Session4_BoilerPlate)'
+2023-06-22 16:54:30.512 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllProducts() on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 16:54:33.186 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice]
+FROM [Products] AS [p]
+2023-06-22 16:56:45.260 +05:30 [INF] Creating key {6e291303-0ad1-4401-b08b-7a706a1bdc09} with creation date 2023-06-22 11:26:45Z, activation date 2023-06-22 11:26:45Z, and expiration date 2023-07-22 11:26:45Z.
+2023-06-22 16:56:45.434 +05:30 [WRN] No XML encryptor configured. Key {6e291303-0ad1-4401-b08b-7a706a1bdc09} may be persisted to storage in unencrypted form.
+2023-06-22 16:56:45.465 +05:30 [INF] Writing data to file 'C:\Users\User\source\repos\.NetCore\ADO\Asp.net\BiolerPlate\Session4_BoilerPlate\key-6e291303-0ad1-4401-b08b-7a706a1bdc09.xml'.
+2023-06-22 16:56:45.937 +05:30 [INF] Now listening on: https://localhost:7081
+2023-06-22 16:56:45.950 +05:30 [INF] Now listening on: http://localhost:5031
+2023-06-22 16:56:45.968 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-22 16:56:45.972 +05:30 [INF] Hosting environment: Development
+2023-06-22 16:56:45.975 +05:30 [INF] Content root path: C:\Users\User\source\repos\.NetCore\ADO\Asp.net\BiolerPlate\Session4_BoilerPlate\
+2023-06-22 16:56:47.680 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/index.html - -
+2023-06-22 16:56:48.479 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - -
+2023-06-22 16:56:48.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_vs/browserLink - -
+2023-06-22 16:56:48.507 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 30.4073ms
+2023-06-22 16:56:48.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/index.html - - - 200 - text/html;charset=utf-8 864.7827ms
+2023-06-22 16:56:48.590 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.0413ms
+2023-06-22 16:56:48.697 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - -
+2023-06-22 16:56:49.009 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 312.0162ms
+2023-06-22 16:57:10.362 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7081/api/Product application/json 85
+2023-06-22 16:57:10.420 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate)'
+2023-06-22 16:57:10.474 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateProduct(Session4_BoilerPlate.Models.CreateProductDTO) on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 16:57:13.346 +05:30 [INF] Executed DbCommand (126ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ProductDescription], [ProductName], [ProductPrice])
+OUTPUT INSERTED.[ProductId]
+VALUES (@p0, @p1, @p2);
+2023-06-22 16:57:13.464 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Session4_BoilerPlate.AddDbContext.Product'.
+2023-06-22 16:57:13.529 +05:30 [INF] Executed action Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate) in 3046.5294ms
+2023-06-22 16:57:13.530 +05:30 [INF] Executed endpoint 'Session4_BoilerPlate.Controllers.ProductController.CreateProduct (Session4_BoilerPlate)'
+2023-06-22 16:57:13.558 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7081/api/Product application/json 85 - 201 - application/json;+charset=utf-8 3196.1812ms
+2023-06-22 16:57:29.324 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7081/api/Product/3 - -
+2023-06-22 16:57:29.325 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.DeleteProduct (Session4_BoilerPlate)'
+2023-06-22 16:57:29.340 +05:30 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteProduct(Int32) on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 16:57:30.335 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__id_0
+2023-06-22 16:57:30.383 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Products]
+OUTPUT 1
+WHERE [ProductId] = @p0;
+2023-06-22 16:57:30.416 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-06-22 16:57:30.417 +05:30 [INF] Executed action Session4_BoilerPlate.Controllers.ProductController.DeleteProduct (Session4_BoilerPlate) in 1076.1646ms
+2023-06-22 16:57:30.417 +05:30 [INF] Executed endpoint 'Session4_BoilerPlate.Controllers.ProductController.DeleteProduct (Session4_BoilerPlate)'
+2023-06-22 16:57:30.417 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7081/api/Product/3 - - - 204 - - 1092.7744ms
+2023-06-22 16:57:48.127 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Product - -
+2023-06-22 16:57:48.128 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.GetAllProducts (Session4_BoilerPlate)'
+2023-06-22 16:57:48.129 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllProducts() on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 16:57:48.160 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice]
+FROM [Products] AS [p]
+2023-06-22 16:58:29.666 +05:30 [INF] Now listening on: https://localhost:7081
+2023-06-22 16:58:29.739 +05:30 [INF] Now listening on: http://localhost:5031
+2023-06-22 16:58:29.755 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-22 16:58:29.759 +05:30 [INF] Hosting environment: Development
+2023-06-22 16:58:29.762 +05:30 [INF] Content root path: C:\Users\User\source\repos\.NetCore\ADO\Asp.net\BiolerPlate\Session4_BoilerPlate\
+2023-06-22 16:58:30.802 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/index.html - -
+2023-06-22 16:58:31.583 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - -
+2023-06-22 16:58:31.600 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/_vs/browserLink - -
+2023-06-22 16:58:31.611 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 26.2203ms
+2023-06-22 16:58:31.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/index.html - - - 200 - text/html;charset=utf-8 832.3073ms
+2023-06-22 16:58:31.712 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 112.8187ms
+2023-06-22 16:58:31.785 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - -
+2023-06-22 16:58:32.053 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7081/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.5966ms
+2023-06-22 16:58:38.548 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Product - -
+2023-06-22 16:58:38.604 +05:30 [INF] Executing endpoint 'Session4_BoilerPlate.Controllers.ProductController.GetAllProducts (Session4_BoilerPlate)'
+2023-06-22 16:58:38.642 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllProducts() on controller Session4_BoilerPlate.Controllers.ProductController (Session4_BoilerPlate).
+2023-06-22 16:58:41.681 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice]
+FROM [Products] AS [p]
